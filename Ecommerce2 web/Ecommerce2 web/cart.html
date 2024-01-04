@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 20px;
+        }
+
+        .cart-item {
+            background-color: white;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            width: 500px;
+            overflow: hidden;
+        }
+
+        .cart-item img {
+            width: 100%;
+            height: auto;
+        }
+
+        .cart-item-details {
+            padding: 15px;
+            text-align: center;
+        }
+
+        button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        .total {
+            text-align: center;
+            margin: 20px;
+            font-size: 4.2em;
+        }
+        .total button{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Shopping Cart</h1>
+    </header>
+
+    <div class="container">
+        <div class="cart-item">
+            <img src="sh1.webp" alt="Product 1">
+            <div class="cart-item-details">
+                <h2>Stylish Shirt</h2>
+                <p>Price: $39.99</p>
+                <p>Quantity: 1</p>
+                <button>Remove</button>
+            </div>
+        </div>
+
+        <div class="cart-item">
+            <img src="sh2.webp" alt="Product 2">
+            <div class="cart-item-details">
+                <h2>Casual Jeans</h2>
+                <p>Price: $49.99</p>
+                <p>Quantity: 2</p>
+                <button>Remove</button>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="total">
+        <p>Total: $139.97</p>
+        <button onclick="proceedToCheckout()">Proceed to Checkout</button>
+    </div>
+    <script>
+          function proceedToCheckout() {
+            alert('Proceeding to checkout. Implement your checkout logic here.');
+        }
+    </script>
+
+</body>
+</html>
